@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <link rel="stylesheet" href="resources/style/style.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+</head>
+<body onload="getTime()">
+    
+    <!--Main window-->
+    <div class="main-container">
+        
+        <!--Header-->
+        <div class="header">
+            <h1>counter</h1>
+        </div>
+
+        <!--Content-->
+        <div class="content">
+            
+            <!--Status window-->
+            <div class="status container">
+
+                <!--Status header-->
+                <div class="status-header">
+                    <h2 id="time">13:10</h2>
+                    
+                    <!--Date-->
+                    <div class="date">
+                        <h3 id="date">16/1</h3>
+                        <h3 id="year">2023</h3>
+                    </div>
+
+                </div>
+
+                <!--Status content-->
+                <div class="status-content">
+
+                    <div class="tickets status-container">
+                        <span class="material-symbols-outlined">work</span>
+                        <p>5 st</p>
+                    </div>
+
+                    <div class="work-remaining status-container">
+                        <span class="material-symbols-outlined">schedule</span>
+                        <p>1h 30min</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--Work info & features-->
+            <div class="work-container">
+
+                <!--Top bar-->
+                <div class="top">
+
+                    <!--Panels-->
+                    <div class="panel">
+                        <h2>antal samtal</h2>
+                        <h3 id="counter-calls">0</h3>
+
+                        <div class="buttons">
+                            <button id="button-plus-cc"><span class="material-symbols-outlined">add</span></button>
+                            <button id="button-minus-cc"><span class="material-symbols-outlined">remove</span></button>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <h2>antal lösta</h2>
+                        <h3 id="counter-solved">0</h3>
+
+                        <div class="buttons">
+                            <button id="button-plus-cs"><span class="material-symbols-outlined">add</span></button>
+                            <button id="button-minus-cs"><span class="material-symbols-outlined">remove</span></button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Bottom bar-->
+                <div class="bottom">
+                    <button id="button-escalate" data-text="eskalera"><span class="material-symbols-outlined">contact_support</span></button>
+                    <button id="button-ts" data-text="felsökning"><span class="material-symbols-outlined">support_agent</span></button>
+                    <button id="button-contacts" data-text="kontakter"><span class="material-symbols-outlined">group</span></button>
+                    <button id="button-schedule" data-text="schema"><span class="material-symbols-outlined">calendar_month</span></button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Modals / Popups -->
+    <div id="eskalering-window" class="modal">
+
+        <!--Modal main window-->
+        <div class="modal-window">
+
+            <!--Header-->
+            <div class="header">
+                <div class="title">
+                    <h2>eskalering</h2>
+                </div>
+                <div class="exit-button">
+                    <a id='reset-button'><span class="material-symbols-outlined">replay</span></a>
+                    <a id="exit-button"><h6>&#9587</h6></a>
+                </div>
+            </div>
+
+            <!--Content-->
+            <div action="#" class="content">
+
+                <!--First form page-->
+                <form id="eskalering1" class="form">
+                    <div class="question fault">
+                        <h3>beskriv kortfattat det problem som upplevs</h3>
+                        <textarea spellcheck="false" type="text" id="service"></textarea>
+                    </div>
+
+                    <div class="question total-users">
+                        <h3>hur många användare är påverkade?</h3>
+                        <select name="total-users-affected" id="total-users-affected">
+                            <option value="1">en användare</option>
+                            <option value="2-10">2-10 användare</option>
+                            <option value="Fler än 10">fler än 10 användare</option>
+                            <option value="Hela organisationen">hela organisationen</option>
+                        </select>
+                    </div>
+
+                    <div class="question subscriptions">
+                        <h3>ange telefonnummer & IMSI på en eller flera påverkade abonnemang</h3>
+                        <div class="answers">
+                            <input id="sub-number" placeholder="telefonnummer" type="text">
+                            <input id="sub-imsi" placeholder="IMSI" type="text">
+                            <button type="button" id="sub-button-add" class="button-add"><span class="material-symbols-outlined">add</span></button>
+                        </div>
+
+                        <div id="subs-parent" class="subs">
+                        </div>
+                    </div>
+
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-next-1">nästa</button>
+                    </div>
+                </form>
+
+                <!--Samtalskvalitet form page-->
+                <form id="samtalskvalitet" class="form">
+                    <div class="question location">
+                        <h3>är problemet platsrelaterat?</h3>
+                        <select name="location-based" id="location-based">
+                            <option value="Ja">ja</option>
+                            <option value="Nej">nej</option>
+                        </select>
+                    </div>
+
+                    <div class="question address">
+                        <h3>på vilken adress upplever man problemet?</h3>
+                        <input type="text" placeholder="adress" id="address">
+                    </div>
+
+                    <div class="question problem-started">
+                        <h3>när började man uppleva problemet?</h3>
+                        <input id="problem-started" type="date" placeholder="adress">
+                    </div>
+
+                    <div class="question detailed-description">
+                        <h3>beskriv problemet utförligt & vad du har gjort i felsökningen.</h3>
+                        <textarea spellcheck="false" name="detailed-description" id="detailed-description" cols="1" rows="4"></textarea>
+                    </div>
+
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-2">tillbaka</button>
+                        <button type="button" class="button-page" id="button-next-2">nästa</button>
+                    </div>
+                </form>
+
+                <!--Samtalsexempel form page 1 -->
+                <form id="samtalsexempel" class="form samtalsexempel">
+                    <div class="question">
+                        <h2>lägg till samtalsexempel</h2>
+
+                        <div class="container number">
+                            <h4>A-nummer</h4>
+                            <div class="select">
+                                <div id="select-a" class="select-list">
+                                    <select id="sub-select-a" name="a-number">
+                                    </select>
+                                </div>
+
+                                <div id='manual-a' class="inputs">
+                                    <input id="a-phonenumber-manually" placeholder="telefonnummer" type="text">
+                                    <input id="a-imsi-manually" placeholder="IMSI" type="text">
+                                </div>
+
+                                <div class="select-manually">
+                                    <input id="cb-a" type="checkbox">
+                                    <p id="text-manual">välj annat nummer</p>
+                                </div>
+                            </div>                            
+                        </div>
+
+                        <div class="container number">
+                            <h4>B-nummer</h4>
+                            <div class="select">
+                                <div id="select-b" class="select-list">
+                                    <select id="sub-select-b" name="a-number">
+                                    </select>
+                                </div>
+
+                                <div id='manual-b' class="inputs">
+                                    <input id="b-phonenumber-manually" placeholder="telefonnummer" type="text">
+                                    <input id="b-imsi-manually" placeholder="IMSI" type="text">
+                                </div>
+
+                                <div class="select-manually">
+                                    <input id="cb-b" type="checkbox">
+                                    <p id="text-manual">välj annat nummer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <h4>datum & tid</h4>
+                            <div class="select date">
+                                <input class="example-date" id="example-date" type="date" placeholder="datum">
+                                <input id="example-time" type="text" placeholder="tid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-add-example">lägg till fler</button>
+                        <button type="button" class="button-page" id="button-back-3">tillbaka</button>
+                        <button type="button" class="button-page" id="button-next-3">nästa</button>
+                    </div>
+                </form>
+
+                <!--Samtalsexempel form page 2 -->
+                <form id="samtalsexempel2" class="form samtalsexempel">
+                    <div class="question">
+                        <h2>lägg till fler samtalsexempel</h2>
+
+                        <div class="container number">
+                            <h4>A-nummer</h4>
+                            <div class="select">
+                                <div id="select-a-2" class="select-list">
+                                    <select id="sub-select-a-2" name="a-number">
+                                    </select>
+                                </div>
+
+                                <div id='manual-a-2' class="inputs">
+                                    <input id="a-phonenumber-manually-2" placeholder="telefonnummer" type="text">
+                                    <input id="a-imsi-manually-2" placeholder="IMSI" type="text">
+                                </div>
+
+                                <div class="select-manually">
+                                    <input id="cb-a-2" type="checkbox">
+                                    <p id="text-manual">välj annat nummer</p>
+                                </div>
+                            </div>                            
+                        </div>
+
+                        <div class="container number">
+                            <h4>B-nummer</h4>
+                            <div class="select">
+                                <div id="select-b-2" class="select-list">
+                                    <select id="sub-select-b-2" name="b-number">
+                                    </select>
+                                </div>
+
+                                <div id='manual-b-2' class="inputs">
+                                    <input id="b-phonenumber-manually-2" placeholder="telefonnummer" type="text">
+                                    <input id="b-imsi-manually-2" placeholder="IMSI" type="text">
+                                </div>
+
+                                <div class="select-manually">
+                                    <input id="cb-b-2" type="checkbox">
+                                    <p id="text-manual">välj annat nummer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <h4>datum & tid</h4>
+                            <div class="select date">
+                                <input class="example-date" id="example-date-2" type="date" placeholder="datum">
+                                <input id="example-time-2" type="text" placeholder="tid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-add-example-2">lägg till fler</button>
+                        <button type="button" class="button-page" id="button-back-4">tillbaka</button>
+                        <button type="button" class="button-page" id="button-next-4">nästa</button>
+                    </div>
+                </form>
+
+                <!--Samtalsexempel form page 3 -->
+                <form id="samtalsexempel3" class="form samtalsexempel">
+                    <div class="question">
+                        <h2>lägg till fler samtalsexempel</h2>
+
+                        <div class="container number">
+                            <h4>A-nummer</h4>
+                            <div class="select">
+                                <div id="select-a-3" class="select-list">
+                                    <select id="sub-select-a-3" name="a-number">
+                                    </select>
+                                </div>
+
+                                <div id='manual-a-3' class="inputs">
+                                    <input id="a-phonenumber-manually-3" placeholder="telefonnummer" type="text">
+                                    <input id="a-imsi-manually-3" placeholder="IMSI" type="text">
+                                </div>
+
+                                <div class="select-manually">
+                                    <input id="cb-a-3" type="checkbox">
+                                    <p id="text-manual">välj annat nummer</p>
+                                </div>
+                            </div>                            
+                        </div>
+
+                        <div class="container number">
+                            <h4>B-nummer</h4>
+                            <div class="select">
+                                <div id="select-b-3" class="select-list">
+                                    <select id="sub-select-b-3" name="a-number">
+                                    </select>
+                                </div>
+
+                                <div id='manual-b-3' class="inputs">
+                                    <input id="b-phonenumber-manually-3" placeholder="telefonnummer" type="text">
+                                    <input id="b-imsi-manually-3" placeholder="IMSI" type="text">
+                                </div>
+
+                                <div class="select-manually">
+                                    <input id="cb-b-3" type="checkbox">
+                                    <p id="text-manual">välj annat nummer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <h4>datum & tid</h4>
+                            <div class="select date">
+                                <input class="example-date" id="example-date-3" type="date" placeholder="datum">
+                                <input id="example-time-3" type="text" placeholder="tid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-5">tillbaka</button>
+                        <button type="button" class="button-page" id="button-next-5">nästa</button>
+                    </div>
+                </form>
+
+
+                <!--Final page-->
+                <form id="eskalering-final" class="form">
+                    <div class="question">
+                        <h2>eskaleringsmall</h2>
+                    </div>
+
+                    <div class="information">
+                        <p>kontrollera att uppgifterna nedan stämmer. <span>Kopiera</span> sedan mallen och klistra in i ditt ärende innan du skickar till önskad supportgrupp.</p>
+                    </div>
+
+                    <div class="question">
+                        <textarea spellcheck="false" id="final-mall" cols="2" rows="10"></textarea>
+                    </div>
+
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-6">tillbaka</button>
+                        <button type="button" class="button-page" id="done">klar</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--JavaScript-->
+    <script src="/resources/script/script.js"></script>
+
+</body>
+</html>
