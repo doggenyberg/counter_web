@@ -80,7 +80,7 @@
                 <!--Bottom bar-->
                 <div class="bottom">
                     <button id="button-escalate" data-text="eskalera"><span class="material-symbols-outlined">contact_support</span></button>
-                    <button id="button-ts" data-text="ej tillgänglig"><span class="material-symbols-outlined">support_agent</span></button>
+                    <button id="button-ts" data-text="felsökning"><span class="material-symbols-outlined">support_agent</span></button>
                     <button id="button-contacts" data-text="ej tillgänglig"><span class="material-symbols-outlined">group</span></button>
                     <button id="button-schedule" data-text="ej tillgänglig"><span class="material-symbols-outlined">calendar_month</span></button>
                 </div>
@@ -385,13 +385,54 @@
 
         <div class="modal-window">
             <div class="header">
-                <h2>felsökning</h2>
+                <div class="title">
+                    <h2>felsökning</h2>
+                </div>
+                <div class="exit-button">
+                    <a id="exit-button"><h6>&#9587</h6></a>
+                </div>
             </div>
 
             <div class="content">
                 <div class="form">
                     
+                    <div class="form-header">
+                        <p>här kan du få hjälp med <span>grundlig</span> felsökning<br>på nedan tjänster.</p>
+                    </div>
+
+                    <div class="services">
+                        <ul>
+                            <li id="si-watch" class="service-item">klockabonnemang</li>
+                            <li id="si-m2m" class="service-item">M2M / telematik</li>
+                            <li id='si-MMS' class="service-item">MMS</li>
+                            <li id="si-roaming" class="service-item">roaming</li>
+                            <li id="si-rbl" class="service-item">röstbrevlåda</li>
+                            <li id='si-samtal' class="service-item">samtal</li>
+                            <li id="si-SMS" class="service-item">SMS</li>
+                            <li id="si-surf" class="service-item">surf</li>
+                            <li id="si-t2open" class="service-item">Tele2 Open</li>
+                            <li id="si-t2v" class="service-item">Tele2 Växel</li>
+                            <li id="si-coverage" class="service-item">täckning</li>
+                        </ul>
+                    </div>
                 </div>
+
+                <div id="ts-samtal-first" class="form window">
+
+                    <div class="form-header">
+                        <p>välj underkategori</p>
+                    </div>
+
+                    <div class="services samtal-first">
+                        <ul>
+                            <li id="si-call-inc">inkommande samtal</li>
+                            <li id="si-call-out">utgående samtal</li>
+                            <li id="si-call-abroad">ringa utlandet</li>
+                            <li id="si-call-specific">ringa specifikt nummer</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
 

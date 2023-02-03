@@ -130,6 +130,16 @@ function openModalWindow(window) {
     window.style.top = '0';
 }
 
+function firstPage() {
+    modalPageFirst.style.left = '20px';
+    modalPageSamtalskvalitet.style.left = '600px';
+    modalPageSamtalsexempel.style.left = '600px';
+    modalPageSamtalsexempel.style.top = '60px';
+    modalPageSamtalsexempel2.style.top = '550px';
+    modalPageSamtalsexempel3.style.top = '550px';
+    modalPageFinal.style.left = '600px';
+}
+
 function nextPage(currentPage, nextPage) {
     if (currentPage === modalPageSamtalsexempel2 || currentPage === modalPageSamtalsexempel3) {
         nextPage.style.left = '20px';
@@ -277,6 +287,7 @@ function resetValues() {
                 parent.removeChild(parent.firstChild);
             }
         });
+        firstPage();
     };
 
     deleteChilds(selectArray);
