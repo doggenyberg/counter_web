@@ -567,14 +567,6 @@ modalLocationBased.addEventListener('change', (e) => {
 });
 
 // Eventlisteners Buttons
-modalEskaleringWindow.addEventListener('click', (e) => {
-    if (e.target !== modalEskaleringWindow) {
-        return;
-    } 
-    closeModalWindow(modalEskaleringWindow);
-    e.stopPropagation();
-});
-
 modalEskaleringExitButton.addEventListener('click', () => {closeModalWindow(modalEskaleringWindow)});
 modalEskaleringOpenButton.addEventListener('click', () => {openModalWindow(modalEskaleringWindow)});
 
@@ -613,8 +605,30 @@ modalSamtalsexempelCheckboxA3.checked = false;
 modalSamtalsexempelCheckboxB3.addEventListener('change', () => {checkboxStatus(modalSamtalsexempelCheckboxB3, modalSamtalsexempelBSelect3, modalSamtalsexempelBManual3)});
 modalSamtalsexempelCheckboxB3.checked = false;
 
+// --- Troubleshooting --- //
+
+
+// Import HTML
+const modalTSWindow = document.getElementById('troubleshooting-window');
+
+// Import Input & Button
+const modalTSOpenBtn = document.getElementById('button-ts');
+const modalTSCloseBtn = document.getElementById('ts-exit-button');
+const modalTSPageFirst = document.getElementById('ts-first');
+
+
+const modalTSSamtalBtn = document.getElementById('si-samtal');
+const modalTSPageSamtalFirst = document.getElementById('ts-samtal-first');
+
+
+// Eventlisteners
+modalTSOpenBtn.addEventListener('click', () => {openModalWindow(modalTSWindow)});
+modalTSCloseBtn.addEventListener('click', () => {closeModalWindow(modalTSWindow)});
+modalTSSamtalBtn.addEventListener('click', () => {nextPage(modalTSPageFirst, modalTSPageSamtalFirst)});
+
 
 
 // reset values on start
 resetValues();
 closeModalWindow(modalEskaleringWindow);
+closeModalWindow(modalTSWindow);
