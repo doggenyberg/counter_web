@@ -631,4 +631,4 @@ modalTSSamtalBtn.addEventListener('click', () => {nextPage(modalTSPageFirst, mod
 // reset values on start
 resetValues();
 closeModalWindow(modalEskaleringWindow);
-closeModalWindow(modalTSWindow);
+// closeModalWindow(modalTSWindow);

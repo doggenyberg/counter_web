@@ -698,6 +698,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 #troubleshooting-window .services li {
@@ -720,4 +721,19 @@ body {
 
 #troubleshooting-window .window {
     left: 600px;
+    padding: 20px 40px;
+    gap: 10px;
+}
+
+#troubleshooting-window .checklist li {
+    margin-bottom: 4px;
+    list-style-type: circle;
+}
+
+#troubleshooting-window .checklist-2 {
+    margin-left: 30px
+}
+
+#troubleshooting-window .checklist-2 li {
+    margin: 0;
 }
