@@ -616,15 +616,90 @@ const modalTSOpenBtn = document.getElementById('button-ts');
 const modalTSCloseBtn = document.getElementById('ts-exit-button');
 const modalTSPageFirst = document.getElementById('ts-first');
 
-
-const modalTSSamtalBtn = document.getElementById('si-samtal');
 const modalTSPageSamtalFirst = document.getElementById('ts-samtal-first');
+const modalTSSamtalBtn = document.getElementById('si-samtal');
+const modalTSSamtalBtnBack = document.getElementById('button-back-samtal');
+
+const modalTSPageIncoming = document.getElementById('ts-samtal-incoming');
+const modalTSIncomingBtn = document.getElementById('si-call-inc');
+const modalTSIncomingBtnBack = document.getElementById('button-back-incoming');
+
+const modalTSPageOutbound = document.getElementById('ts-samtal-outbound');
+const modalTSOutboundBtn = document.getElementById('si-call-out');
+const modalTSOutboundBtnBack = document.getElementById('button-back-outbound');
+
+const modalTSPageAbroad = document.getElementById('ts-samtal-abroad');
+const modalTSAbroadBtn = document.getElementById('si-call-abroad');
+const modalTSAbroadBtnBack = document.getElementById('button-back-abroad');
+
+const modalTSPageSpecific = document.getElementById('ts-samtal-specific');
+const modalTSSpecificBtn = document.getElementById('si-call-specific');
+const modalTSSpecificBtnBack = document.getElementById('button-back-specific');
+
+const modalTSPageSurfFirst = document.getElementById('ts-surf-first');
+const modalTSSurfFirstBtn = document.getElementById('si-surf-first');
+const modalTSSurfFirstBtnBack = document.getElementById('button-back-surf-first');
+
+const modalTSPageSurf = document.getElementById('ts-surf');
+const modalTSSurfBtn = document.getElementById('si-surf');
+const modalTSSurfBtnBack = document.getElementById('button-back-surf');
+
+const modalTSPageSpeed = document.getElementById('ts-surf-speed');
+const modalTSSpeedBtn = document.getElementById('si-surf-speed');
+const modalTSSpeedBtnBack = document.getElementById('button-back-speed');
+
+const modalTSPageMMS = document.getElementById('ts-mms');
+const modalTSMMSBtn = document.getElementById('si-mms');
+const modalTSMMSBtnBack = document.getElementById('button-back-mms');
+
+const modalTSPageSMS = document.getElementById('ts-sms');
+const modalTSSMSBtn = document.getElementById('si-sms');
+const modalTSSMSBtnBack = document.getElementById('button-back-sms');
+
+const modalTSPageSMSDelayed = document.getElementById('ts-sms-delayed');
+const modalTSSMSDelayedBtn = document.getElementById('si-sms-delayed');
+const modalTSSMSDelayedBtnBack = document.getElementById('button-back-sms-delayed');
+
+const modalTSPageSMSRepeat = document.getElementById('ts-sms-repeat');
+const modalTSSMSRepeatBtn = document.getElementById('si-sms-repeat');
+const modalTSSMSRepeatBtnBack = document.getElementById('button-back-sms-repeat');
+
+const modalTSPageSMSSend = document.getElementById('ts-sms-send');
+const modalTSSMSSendBtn = document.getElementById('si-sms-send');
+const modalTSSMSSendBtnBack = document.getElementById('button-back-sms-send');
+
+
 
 
 // Eventlisteners
 modalTSOpenBtn.addEventListener('click', () => {openModalWindow(modalTSWindow)});
 modalTSCloseBtn.addEventListener('click', () => {closeModalWindow(modalTSWindow)});
 modalTSSamtalBtn.addEventListener('click', () => {nextPage(modalTSPageFirst, modalTSPageSamtalFirst)});
+modalTSSamtalBtnBack.addEventListener('click', () => {previousPage(modalTSPageSamtalFirst, modalTSPageFirst)});
+modalTSIncomingBtn.addEventListener('click', () => {nextPage(modalTSPageSamtalFirst, modalTSPageIncoming)});
+modalTSIncomingBtnBack.addEventListener('click', () => {previousPage(modalTSPageIncoming, modalTSPageSamtalFirst)});
+modalTSOutboundBtn.addEventListener('click', () => {nextPage(modalTSPageSamtalFirst, modalTSPageOutbound)});
+modalTSOutboundBtnBack.addEventListener('click', () => {previousPage(modalTSPageOutbound, modalTSPageSamtalFirst)});
+modalTSAbroadBtn.addEventListener('click', () => {nextPage(modalTSPageSamtalFirst, modalTSPageAbroad)});
+modalTSAbroadBtnBack.addEventListener('click', () => {previousPage(modalTSPageAbroad, modalTSPageSamtalFirst)});
+modalTSSpecificBtn.addEventListener('click', () => {nextPage(modalTSPageSamtalFirst, modalTSPageSpecific)});
+modalTSSpecificBtnBack.addEventListener('click', () => {previousPage(modalTSPageSpecific, modalTSPageSamtalFirst)});
+modalTSSurfFirstBtn.addEventListener('click', () => {nextPage(modalTSPageFirst, modalTSPageSurfFirst)});
+modalTSSurfFirstBtnBack.addEventListener('click', () => {previousPage(modalTSPageSurfFirst, modalTSPageFirst)});
+modalTSSurfBtn.addEventListener('click', () => {nextPage(modalTSPageSurfFirst, modalTSPageSurf)});
+modalTSSurfBtnBack.addEventListener('click', () => {previousPage(modalTSPageSurf, modalTSPageSurfFirst)});
+modalTSSpeedBtn.addEventListener('click', () => {nextPage(modalTSPageSurfFirst, modalTSPageSpeed)});
+modalTSSpeedBtnBack.addEventListener('click', () => {previousPage(modalTSPageSpeed, modalTSPageSurfFirst)});
+modalTSMMSBtn.addEventListener('click', () => {nextPage(modalTSPageFirst, modalTSPageMMS)});
+modalTSMMSBtnBack.addEventListener('click', () => {previousPage(modalTSPageMMS, modalTSPageFirst)});
+modalTSSMSBtn.addEventListener('click', () => {nextPage(modalTSPageFirst, modalTSPageSMS)});
+modalTSSMSBtnBack.addEventListener('click', () => {previousPage(modalTSPageSMS, modalTSPageFirst)});
+modalTSSMSDelayedBtn.addEventListener('click', () => {nextPage(modalTSPageSMS, modalTSPageSMSDelayed)});
+modalTSSMSDelayedBtnBack.addEventListener('click', () => {previousPage(modalTSPageSMSDelayed, modalTSPageSMS)});
+modalTSSMSRepeatBtn.addEventListener('click', () => {nextPage(modalTSPageSMS, modalTSPageSMSRepeat)});
+modalTSSMSRepeatBtnBack.addEventListener('click', () => {previousPage(modalTSPageSMSRepeat, modalTSPageSMS)});
+modalTSSMSSendBtn.addEventListener('click', () => {nextPage(modalTSPageSMS, modalTSPageSMSSend)});
+modalTSSMSSendBtnBack.addEventListener('click', () => {previousPage(modalTSPageSMSSend, modalTSPageSMS)});
 
 
 

@@ -337,7 +337,7 @@ body {
     height: 480px;
     width: 530px;
     background-color: var(--window-primary-color);
-    overflow: visible;
+    overflow: hidden;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -698,7 +698,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 
 #troubleshooting-window .services li {
@@ -721,19 +720,24 @@ body {
 
 #troubleshooting-window .window {
     left: 600px;
-    padding: 20px 40px;
     gap: 10px;
 }
 
+#troubleshooting-window h3 {
+    color: var(--accent-color);
+}
+
 #troubleshooting-window .checklist li {
-    margin-bottom: 4px;
-    list-style-type: circle;
+    margin-bottom: 8px;
+    list-style-type: none;
+    font-size: 0.9em;
 }
 
 #troubleshooting-window .checklist-2 {
-    margin-left: 30px
+    margin-left: 30px;
 }
 
 #troubleshooting-window .checklist-2 li {
     margin: 0;
+    list-style-type: circle;
 }

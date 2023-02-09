@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>counter</title>
+    <link rel="icon" type="image/x-icon" href="resources/img/favicon.ico">
     <link rel="stylesheet" href="resources/style/style.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <script src="resources/script/script.js" defer></script>
@@ -113,24 +114,24 @@
                 <!--First form page-->
                 <form id="eskalering1" class="form">
                     <div class="question fault">
-                        <h3>beskriv kortfattat det problem som upplevs</h3>
+                        <h3>Beskriv kortfattat det problem som upplevs</h3>
                         <textarea spellcheck="false" type="text" id="service"></textarea>
                     </div>
 
                     <div class="question total-users">
-                        <h3>hur många användare är påverkade?</h3>
+                        <h3>Hur många användare är påverkade?</h3>
                         <select name="total-users-affected" id="total-users-affected">
-                            <option value="1">en användare</option>
+                            <option value="1">En användare</option>
                             <option value="2-10">2-10 användare</option>
-                            <option value="Fler än 10">fler än 10 användare</option>
-                            <option value="Hela organisationen">hela organisationen</option>
+                            <option value="Fler än 10">Fler än 10 användare</option>
+                            <option value="Hela organisationen">Hela organisationen</option>
                         </select>
                     </div>
 
                     <div class="question subscriptions">
-                        <h3>ange telefonnummer & IMSI på en eller flera påverkade abonnemang</h3>
+                        <h3>Ange telefonnummer & IMSI på en eller flera påverkade abonnemang</h3>
                         <div class="answers">
-                            <input id="sub-number" placeholder="telefonnummer" type="text">
+                            <input id="sub-number" placeholder="Telefonnummer" type="text">
                             <input id="sub-imsi" placeholder="IMSI" type="text">
                             <button type="button" id="sub-button-add" class="button-add"><span class="material-symbols-outlined">add</span></button>
                         </div>
@@ -147,26 +148,26 @@
                 <!--Samtalskvalitet form page-->
                 <form id="samtalskvalitet" class="form">
                     <div class="question location">
-                        <h3>är problemet platsrelaterat?</h3>
+                        <h3>Är problemet platsrelaterat?</h3>
                         <select name="location-based" id="location-based">
-                            <option value="Ja">ja</option>
-                            <option value="Nej">nej</option>
+                            <option value="Ja">Ja</option>
+                            <option value="Nej">Nej</option>
                         </select>
                     </div>
 
                     <div class="question address">
-                        <h3>på vilken adress upplever man problemet?</h3>
-                        <input type="text" placeholder="adress" id="address">
+                        <h3>På vilken adress upplever man problemet?</h3>
+                        <input type="text" placeholder="Adress" id="address">
                     </div>
 
                     <div class="question problem-started">
-                        <h3>när började man uppleva problemet?</h3>
-                        <input id="problem-started" type="date" placeholder="adress">
+                        <h3>När började man uppleva problemet?</h3>
+                        <input id="problem-started" type="date">
                     </div>
 
                     <div class="question detailed-description">
-                        <h3>beskriv problemet utförligt & vad du har gjort i felsökningen</h3>
-                        <textarea spellcheck="false" name="detailed-description" id="detailed-description" cols="1" rows="4"></textarea>
+                        <h3>Beskriv problemet utförligt & vad du har gjort i felsökningen</h3>
+                        <textarea spellcheck="false" name="detailed-description" id="detailed-description" cols="1" rows="4" placeholder="Beskrivning"></textarea>
                     </div>
 
                     <div class="question-button button-next">
@@ -178,7 +179,7 @@
                 <!--Samtalsexempel form page 1 -->
                 <form id="samtalsexempel" class="form samtalsexempel">
                     <div class="question">
-                        <h2>lägg till samtalsexempel</h2>
+                        <h2>Lägg till samtalsexempel</h2>
 
                         <div class="container number">
                             <h4>A-nummer</h4>
@@ -189,13 +190,13 @@
                                 </div>
 
                                 <div id='manual-a' class="inputs">
-                                    <input id="a-phonenumber-manually" placeholder="telefonnummer" type="text">
+                                    <input id="a-phonenumber-manually" placeholder="Telefonnummer" type="text">
                                     <input id="a-imsi-manually" placeholder="IMSI" type="text">
                                 </div>
 
                                 <div class="select-manually">
                                     <input id="cb-a" type="checkbox">
-                                    <p id="text-manual">välj annat nummer</p>
+                                    <p id="text-manual">Välj annat nummer</p>
                                 </div>
                             </div>                            
                         </div>
@@ -209,21 +210,21 @@
                                 </div>
 
                                 <div id='manual-b' class="inputs">
-                                    <input id="b-phonenumber-manually" placeholder="telefonnummer" type="text">
+                                    <input id="b-phonenumber-manually" placeholder="Telefonnummer" type="text">
                                     <input id="b-imsi-manually" placeholder="IMSI" type="text">
                                 </div>
 
                                 <div class="select-manually">
                                     <input id="cb-b" type="checkbox">
-                                    <p id="text-manual">välj annat nummer</p>
+                                    <p id="text-manual">Välj annat nummer</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="container">
-                            <h4>datum & tid</h4>
+                            <h4>Datum & tid</h4>
                             <div class="select date">
-                                <input class="example-date" id="example-date" type="date" placeholder="datum">
+                                <input class="example-date" id="example-date" type="date" placeholder="Datum">
                                 <input id="example-time" type="text" placeholder="tid">
                             </div>
                         </div>
@@ -238,7 +239,7 @@
                 <!--Samtalsexempel form page 2 -->
                 <form id="samtalsexempel2" class="form samtalsexempel">
                     <div class="question">
-                        <h2>lägg till fler samtalsexempel</h2>
+                        <h2>Lägg till fler samtalsexempel</h2>
 
                         <div class="container number">
                             <h4>A-nummer</h4>
@@ -249,13 +250,13 @@
                                 </div>
 
                                 <div id='manual-a-2' class="inputs">
-                                    <input id="a-phonenumber-manually-2" placeholder="telefonnummer" type="text">
+                                    <input id="a-phonenumber-manually-2" placeholder="Telefonnummer" type="text">
                                     <input id="a-imsi-manually-2" placeholder="IMSI" type="text">
                                 </div>
 
                                 <div class="select-manually">
                                     <input id="cb-a-2" type="checkbox">
-                                    <p id="text-manual">välj annat nummer</p>
+                                    <p id="text-manual">Välj annat nummer</p>
                                 </div>
                             </div>                            
                         </div>
@@ -269,22 +270,22 @@
                                 </div>
 
                                 <div id='manual-b-2' class="inputs">
-                                    <input id="b-phonenumber-manually-2" placeholder="telefonnummer" type="text">
+                                    <input id="b-phonenumber-manually-2" placeholder="Telefonnummer" type="text">
                                     <input id="b-imsi-manually-2" placeholder="IMSI" type="text">
                                 </div>
 
                                 <div class="select-manually">
                                     <input id="cb-b-2" type="checkbox">
-                                    <p id="text-manual">välj annat nummer</p>
+                                    <p id="text-manual">Välj annat nummer</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="container">
-                            <h4>datum & tid</h4>
+                            <h4>Datum & tid</h4>
                             <div class="select date">
-                                <input class="example-date" id="example-date-2" type="date" placeholder="datum">
-                                <input id="example-time-2" type="text" placeholder="tid">
+                                <input class="example-date" id="example-date-2" type="date" placeholder="Datum">
+                                <input id="example-time-2" type="text" placeholder="Tid">
                             </div>
                         </div>
                     </div>
@@ -298,7 +299,7 @@
                 <!--Samtalsexempel form page 3 -->
                 <form id="samtalsexempel3" class="form samtalsexempel">
                     <div class="question">
-                        <h2>lägg till fler samtalsexempel</h2>
+                        <h2>Lägg till fler samtalsexempel</h2>
 
                         <div class="container number">
                             <h4>A-nummer</h4>
@@ -309,13 +310,13 @@
                                 </div>
 
                                 <div id='manual-a-3' class="inputs">
-                                    <input id="a-phonenumber-manually-3" placeholder="telefonnummer" type="text">
+                                    <input id="a-phonenumber-manually-3" placeholder="Telefonnummer" type="text">
                                     <input id="a-imsi-manually-3" placeholder="IMSI" type="text">
                                 </div>
 
                                 <div class="select-manually">
                                     <input id="cb-a-3" type="checkbox">
-                                    <p id="text-manual">välj annat nummer</p>
+                                    <p id="text-manual">Välj annat nummer</p>
                                 </div>
                             </div>                            
                         </div>
@@ -329,22 +330,22 @@
                                 </div>
 
                                 <div id='manual-b-3' class="inputs">
-                                    <input id="b-phonenumber-manually-3" placeholder="telefonnummer" type="text">
+                                    <input id="b-phonenumber-manually-3" placeholder="Telefonnummer" type="text">
                                     <input id="b-imsi-manually-3" placeholder="IMSI" type="text">
                                 </div>
 
                                 <div class="select-manually">
                                     <input id="cb-b-3" type="checkbox">
-                                    <p id="text-manual">välj annat nummer</p>
+                                    <p id="text-manual">Välj annat nummer</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="container">
-                            <h4>datum & tid</h4>
+                            <h4>Datum & tid</h4>
                             <div class="select date">
-                                <input class="example-date" id="example-date-3" type="date" placeholder="datum">
-                                <input id="example-time-3" type="text" placeholder="tid">
+                                <input class="example-date" id="example-date-3" type="date" placeholder="Datum">
+                                <input id="example-time-3" type="text" placeholder="Tid">
                             </div>
                         </div>
                     </div>
@@ -358,11 +359,11 @@
                 <!--Final page-->
                 <form id="eskalering-final" class="form">
                     <div class="question">
-                        <h2>eskaleringsmall</h2>
+                        <h2>Eskaleringsmall</h2>
                     </div>
 
                     <div class="information">
-                        <p>kontrollera att uppgifterna nedan stämmer. <span>Kopiera</span> sedan mallen och klistra in i ditt ärende innan du skickar till önskad supportgrupp.</p>
+                        <p>Kontrollera att uppgifterna nedan stämmer. <span>Kopiera</span> sedan mallen och klistra in i ditt ärende innan du skickar till önskad supportgrupp.</p>
                     </div>
 
                     <div class="question">
@@ -397,22 +398,22 @@
                 <div id="ts-first" class="form">
                     
                     <div class="form-header">
-                        <p>här kan du få hjälp med <span>grundlig</span> felsökning<br>på nedan tjänster.</p>
+                        <p>Här kan du få hjälp med <span>grundlig</span> felsökning<br>på nedan tjänster.</p>
                     </div>
 
                     <div class="services">
                         <ul>
-                            <li id="si-watch" class="service-item">klockabonnemang</li>
-                            <li id="si-m2m" class="service-item">M2M / telematik</li>
-                            <li id='si-MMS' class="service-item">MMS</li>
-                            <li id="si-roaming" class="service-item">roaming</li>
-                            <li id="si-rbl" class="service-item">röstbrevlåda</li>
-                            <li id='si-samtal' class="service-item">samtal</li>
-                            <li id="si-SMS" class="service-item">SMS</li>
-                            <li id="si-surf" class="service-item">surf</li>
+                            <li id='si-samtal' class="service-item">Samtal</li>
+                            <li id='si-mms' class="service-item">MMS</li>
+                            <li id="si-surf-first" class="service-item">Surf</li>
+                            <li id="si-sms" class="service-item">SMS</li>
+                            <li id="si-roaming" class="service-item">Roaming</li>
                             <li id="si-t2open" class="service-item">Tele2 Open</li>
-                            <li id="si-t2v" class="service-item">Tele2 Växel</li>
-                            <li id="si-coverage" class="service-item">täckning</li>
+                            <li id="si-coverage" class="service-item">Täckning</li>
+                            <li id="si-watch" class="service-item">Klockabonnemang</li>
+                            <!-- <li id="si-t2v" class="service-item">Tele2 Växel</li> -->
+                            <!-- <li id="si-m2m" class="service-item">M2M / telematik</li> -->
+                            <!-- <li id="si-rbl" class="service-item">röstbrevlåda</li> -->
                         </ul>
                     </div>
                 </div>
@@ -420,53 +421,296 @@
                 <div id="ts-samtal-first" class="form window">
 
                     <div class="form-header">
-                        <p>välj underkategori</p>
+                        <p>Välj underkategori</p>
                     </div>
 
                     <div class="services samtal-first">
                         <ul>
-                            <li id="si-call-inc">inkommande samtal</li>
-                            <li id="si-call-out">utgående samtal</li>
-                            <li id="si-call-abroad">ringa utlandet</li>
-                            <li id="si-call-specific">ringa specifikt nummer</li>
+                            <li id="si-call-inc">Inkommande samtal</li>
+                            <li id="si-call-out">Utgående samtal</li>
+                            <li id="si-call-abroad">Ringa utlandet</li>
+                            <li id="si-call-specific">Ringa specifikt nummer</li>
                         </ul>
                     </div>
 
                     <div class="question-button button-next">
-                        <button type="button" class="button-page" id="button-back-6">tillbaka</button>
+                        <button type="button" class="button-page" id="button-back-samtal">tillbaka</button>
                     </div>
                 </div>
 
                 <div id="ts-samtal-incoming" class="form window">
-
                     <div class="form-header">
-                        <h3>inkommande samtal</h3>
+                        <h3>Inkommande samtal</h3>
                     </div>
 
                     <div class="checklist">
                         <ul>
-                            <li>kontrollera att NP-styrning är korrekt.</li>
-                            <li>kontrollera att VoLTE är aktivt.</li>
-                            <li>vid Tele2 Växel, kontrollera användarens regler.</li>
-                            <li>vid MEX, kontrollera ifall det fungerar vid "disconnected" MEX.</li>
-                            <li>kontrollera att nedan inställningar på användarens telefon:<ul class="checklist-2">
-                                <li>stör ej.</li>
-                                <li>tysta ned okända uppringare.</li>
-                                <li>blockerade nummer.</li>
+                            <li>Kontrollera att abonnemanget är aktivt.</li>
+                            <li>Kontrollera att NP-styrning är korrekt.</li>
+                            <li>Kontrollera att VoLTE är aktivt.</li>
+                            <li>Vid Tele2 Växel, kontrollera användarens regler.</li>
+                            <li>Vid MEX, kontrollera ifall det fungerar vid "disconnected" MEX.</li>
+                            <li>Kontrollera att nedan inställningar på användarens telefon:<ul class="checklist-2">
+                                <li>Stör ej.</li>
+                                <li>Tysta ned okända uppringare.</li>
+                                <li>Blockerade nummer.</li>
                             </ul></li>
-                            <li>ifall problemet är platsrelaterat, gå igenom checklistan för täckning</li>
+                            <li>Ifall problemet är platsrelaterat, se checklistan "täckning".</li>
                         </ul>
                     </div>
 
                     <div class="question-button button-next">
-                        <button type="button" class="button-page" id="button-back-6">tillbaka</button>
+                        <button type="button" class="button-page" id="button-back-incoming">tillbaka</button>
                     </div>
                 </div>
 
+                <div id="ts-samtal-outbound" class="form window">
+                    <div class="form-header">
+                        <h3>Utgående samtal</h3>
+                    </div>
+
+                    <div class="checklist">
+                        <ul>
+                            <li>Kontrollera att abonnemanget är aktivt.</li>
+                            <li>Kontrollera att IN-Service är korrekt (HLR).</li>
+                            <li>Kontrollera att VoLTE är aktivt.</li>
+                            <li>Vid Tele2 Växel, kontrollera användarens regler.</li>
+                            <li>Vid MEX, kontrollera ifall det fungerar vid "disconnected" MEX.</li>
+                            <li>Ifall man bara har problem att ringa till ett specifikt nummer, se checklistan "ringa specifikt nummer"</li>
+                            <li>Ifall problemet är platsrelaterat, se checklistan "täckning".</li>
+                        </ul>
+                    </div>
+
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-outbound">tillbaka</button>
+                    </div>
+                </div>
+
+                <div id="ts-samtal-abroad" class="form window">
+                    <div class="form-header">
+                        <h3>Ringa utlandet</h3>
+                    </div>
+            
+                    <div class="checklist">
+                        <ul>
+                            <li>kontrollera att abonnemanget är aktivt.</li>
+                            <li>kontrollera att det inte finns spärrar för internationella samtal.</li>
+                            <li>kontrollera att IN-Service är korrekt (HLR).</li>
+                            <li>kontrollera att VoLTE är aktivt.</li>
+                            <li>vid Tele2 Växel, kontrollera användarens regler.</li>
+                            <li>vid MEX, kontrollera ifall det fungerar vid "disconnected" MEX.</li>
+                            <li>kontrollera samtalsspårning i OSIX. Finns det några tydliga felkoder?</li>
+                            <li>ifall flera är påverkade, kan man eskalera ärendet till Traffic Management.</li>
+                        </ul>
+                    </div>
+            
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-abroad">tillbaka</button>
+                    </div>
+                </div>
+
+                <div id="ts-samtal-specific" class="form window">
+                    <div class="form-header">
+                        <h3>ringa specifikt nummer</h3>
+                    </div>
+            
+                    <div class="checklist">
+                        <ul>
+                            <li>i majoriteten av fallen så brukar felet ligga hos B-parten.</li>
+                            <li>om B-nummer ligger under en annan operatör, kontrollera att B-nummer har korrekt NP-styrning mot korrekt operatör.<ul class="checklist-2">
+                                <li>Telia mobile: 005</li>
+                                <li>Telenor mobile: 006</li>
+                            </ul></li>
+                            <li>om B-part bara har problem att ta mot samtal från denna A-part, bör B-part kontrollera att A-nummer inte är blockerat i sin telefon.</li>
+                            <li>om B-part har problem att ta emot samtal från flera/alla inringare, bör denna felanmäla till sin operatör.</li>
+                        </ul>
+                    </div>
+            
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-specific">tillbaka</button>
+                    </div>
+                </div>
+
+                <div id="ts-surf-first" class="form window">
+
+                    <div class="form-header">
+                        <p>välj underkategori</p>
+                    </div>
+
+                    <div class="services surf-first">
+                        <ul>
+                            <li id="si-surf">kan inte surfa</li>
+                            <li id="si-surf-speed">långsamma hastigheter</li>
+                        </ul>
+                    </div>
+
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-surf-first">tillbaka</button>
+                    </div>
+                </div>
+
+                <div id="ts-surf" class="form window">
+
+                    <div class="form-header">
+                        <h3>kan inte surfa</h3>
+                    </div>
+
+                    <div class="checklist">
+                        <ul>
+                            <li>kontrollera att abonnemanget är aktivt.</li>
+                            <li>kontrollera att abonnemanget har ett datapaket.</li>
+                            <li>kontrollera att det finns surf kvar att förbruka på datapaketet.</li>
+                            <li>kontrollera att det inte finns någon spärr för datatrafik.</li>
+                            <li>be användaren att kontrollera att mobildata är aktiverat i sin telefon.</li>
+                            <li>be användaren att återställa sina APN-inställningar i telefonen.</li>
+                            <li>kontrollera att APN-inställningarna är korrekt. Alternativt testa med annat APN.</li>
+                            <li>be användaren att nollställa nätverksinställningarna i telefonen.</li>
+                        </ul>
+                    </div>
+
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-surf">tillbaka</button>
+                    </div>
+                </div>
+
+                <div id="ts-surf-speed" class="form window">
+
+                    <div class="form-header">
+                        <h3>långsamma hastigheter</h3>
+                    </div>
+
+                    <div class="checklist">
+                        <ul>
+                            <li>kontrollera att abonnemanget har ett datapaket.</li>
+                            <li>kontrollera att man inte har förbrukat all data.</li>
+                            <li>kontrollera att det inte finns någon spärr för datatrafik.</li>
+                            <li>be användaren att återställa sina APN-inställningar i telefonen.</li>
+                            <li>kontrollera att APN-inställningarna är korrekt. Alternativt testa med annat APN.</li>
+                            <li>om problemet är platsrelaterat, se checklistan "täckning".</li>
+                        </ul>
+                    </div>
+
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-speed">tillbaka</button>
+                    </div>
+                </div>
+
+                <div id="ts-mms" class="form window">
+
+                    <div class="form-header">
+                        <h3>MMS</h3>
+                    </div>
+
+                    <div class="checklist">
+                        <ul>
+                            <li>kontrollera att abonnemanget inte är spärrat för MMS.</li>
+                            <li>kontrollera ifall MMSet syns i MMSC.</li>
+                            <li>ifall MMSet syns i MMSC:<ul class="checklist-2">
+                                <li>kontrollera om det finns någon felkod på MMSet.</li>
+                                <li>om det finns en felkod, sök på felkoden i TCS OneNote.</li>
+                                <li>om det inte finns en felkod, bör MMSet ha levererats korrekt. Problem kan möjligen ligga hos B-parten.</li>
+                            </ul></li>
+                            <li>ifall MMSet inte syns i MMSC:<ul class="checklist-2">
+                                <li>kontrollera att användaren har korrekt APN-inställningar i sin telefon.</li>
+                                <li>testa att återställa APN-inställningar i telefonen.</li>
+                                <li>testa att nollställa nätverksinställningar i telefonen.</li>
+                            </ul></li>
+                            <li>ifall inget av ovan fungerar, be användaren testa sitt SIM-kort i en annan telefon.</li>
+                        </ul>
+                    </div>
+
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-mms">tillbaka</button>
+                    </div>
+                </div>
+
+                <div id="ts-sms" class="form window">
+
+                    <div class="form-header">
+                        <p>välj underkategori</p>
+                    </div>
+
+                    <div class="services sms-first">
+                        <ul>
+                            <li id="si-sms-delayed">fördröjda SMS</li>
+                            <li id="si-sms-repeat">upprepade SMS</li>
+                            <li id="si-sms-send">kan inte skicka / ta emot SMS</li>
+                        </ul>
+                    </div>
+
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-sms">tillbaka</button>
+                    </div>
+                </div>
+
+                <div id="ts-sms-delayed" class="form window">
+
+                    <div class="form-header">
+                        <h3>fördröjda SMS</h3>
+                    </div>
+
+                    <div class="checklist">
+                        <ul>
+                            <li>kontrollera SMSC. Ser vi något annorlunda?</li>
+                            <li>kontrollera att VoLTE är aktivt på abonnemanget & telefon.</li>
+                            <li>om VoLTE redan är aktivt, testa att omprovisionera VoLTE.</li>
+                            <li>testa SIM-kort i annan telefon.</li>
+                            <li>byt SIM-kort på abonnemanget.</li>
+                            <li>om inte ovan hjälper, kan det eventuellt handla om täckningsproblem.</li>
+                        </ul>
+                    </div>
+
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-sms-delayed">tillbaka</button>
+                    </div>
+                </div>
+
+                <div id="ts-sms-repeat" class="form window">
+
+                    <div class="form-header">
+                        <h3>upprepade SMS</h3>
+                    </div>
+
+                    <div class="checklist">
+                        <ul>
+                            <li>kontrollera SMSC. Ser vi något annorlunda?</li>
+                            <li>kontrollera att VoLTE är aktivt på abonnemanget & telefon.</li>
+                            <li>om VoLTE redan är aktivt, testa att omprovisionera VoLTE.</li>
+                            <li>be användaren göra en nätverksåterställning på sin telefon.</li>
+                            <li>byt SIM-kort på abonnemanget.</li>
+                            <li>be användare testa SIM-kort i annan telefon.</li>
+                        </ul>
+                    </div>
+
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-sms-repeat">tillbaka</button>
+                    </div>
+                </div>
+
+                <div id="ts-sms-send" class="form window">
+
+                    <div class="form-header">
+                        <h3>kan inte skicka / ta emot SMS</h3>
+                    </div>
+
+                    <div class="checklist">
+                        <ul>
+                            <li>kontrollera SMSC. Ser vi något annorlunda?</li>
+                            <li>kontrollera att VoLTE är aktivt på abonnemanget & telefon.</li>
+                            <li>om VoLTE redan är aktivt, testa att omprovisionera VoLTE.</li>
+                            <li>be användaren göra en nätverksåterställning på sin telefon.</li>
+                            <li>byt SIM-kort på abonnemanget.</li>
+                            <li>be användare testa SIM-kort i annan telefon.</li>
+                        </ul>
+                    </div>
+
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-sms-send">tillbaka</button>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
-
+</div>
 </body>
 </html>
