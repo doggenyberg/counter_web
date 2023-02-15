@@ -32,6 +32,7 @@ button {
 body {
     background-color: var(--bg-color);
     font-family: 'Rubik', sans-serif;
+    letter-spacing: 0.5px;
     color: #ffffff;
 }
 
@@ -77,9 +78,9 @@ body {
 }
 
 .status, .panel, .bottom {
-    box-shadow: -1px 5px 13px 0px rgba(0,0,0,0.15);
-    -webkit-box-shadow: -1px 5px 13px 0px rgba(0,0,0,0.15);
-    -moz-box-shadow: -1px 5px 13px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.15);
 }
 
 /* --- Status window --- */
@@ -106,7 +107,7 @@ body {
 
     font-weight: 400;
     font-size: 1em;
-    background-color: var(--accent-color);
+    background-color: var(--accent2-color);
     border-radius: 8px;
 }
 
@@ -272,7 +273,7 @@ body {
     border-radius: 8px;
     color: #ffffff;
     background-color: var(--accent2-color);
-    transition: 0.3s;
+    transition: 5ms ease-in-out;
     overflow: hidden;
     cursor: pointer;
 }
@@ -306,7 +307,7 @@ body {
     background-color: #ce414a;
 }
 
-#button-ts, #button-contacts, #button-schedule {
+#button-contacts, #button-schedule {
     background-color: #2c2c2c;
     color: var(--button-hover-color);
     cursor: default;
@@ -643,6 +644,8 @@ body {
 #eskalering-final span {
     color: var(--accent-color);
     font-weight: 400;
+    cursor: text;
+    user-select: text;
 }
 
 #eskalering-final #done {
@@ -656,4 +659,107 @@ body {
     max-height: 230px;
     padding: 2px;
     resize: none;
+}
+
+/* --- Modal Troubleshooting --- */
+
+#ts-first {
+    left: 20px;
+    gap: 10px;
+}
+
+#troubleshooting-window .form-header {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#troubleshooting-window .form-header p {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+}
+
+#troubleshooting-window .form-header span {
+    color: var(--accent-color);
+    cursor: text;
+    user-select: text;
+}
+
+#troubleshooting-window .services {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#troubleshooting-window .services ul {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#troubleshooting-window .services li {
+    list-style: none;
+    padding: 7px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    user-select: none;
+    cursor: pointer;
+}
+
+#troubleshooting-window .services li:hover {
+    background-color: #e64752;
+}
+
+#troubleshooting-window .services li:active {
+    background-color: var(--accent2-color);
+}
+
+#troubleshooting-window .window {
+    left: 600px;
+    gap: 10px;
+}
+
+#troubleshooting-window h3 {
+    font-size: 1.3em;
+}
+
+#troubleshooting-window a {
+    text-decoration: none;
+    color: white;
+}
+
+#troubleshooting-window .checklist {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 240px;
+}
+
+#troubleshooting-window .checklist li {
+    color: rgb(233, 233, 233);
+    width: 98%;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    list-style-type: none;
+    font-size: 0.9em;
+    background-color: #292929;
+}
+
+#troubleshooting-window .checklist-2 {
+    margin-left: 30px;
+}
+
+#troubleshooting-window .checklist-2 li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0;
+    border-radius: 0;
+    background-color: inherit;
+    list-style-type: circle;
 }
