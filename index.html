@@ -406,11 +406,11 @@
                             <li id='si-samtal' class="service-item">Samtal</li>
                             <li id='si-mms' class="service-item">MMS</li>
                             <li id="si-surf-first" class="service-item">Surf</li>
-                            <li id="si-sms" class="service-item">SMS</li>
                             <li id="si-roaming" class="service-item">Roaming</li>
                             <li id="si-t2open" class="service-item">Tele2 Open</li>
+                            <li id="si-sms" class="service-item">SMS</li>
                             <li id="si-coverage" class="service-item">Täckning</li>
-                            <li id="si-watch" class="service-item">Klockabonnemang</li>
+                            <!-- <li id="si-watch" class="service-item">Klockabonnemang</li> -->
                             <!-- <li id="si-t2v" class="service-item">Tele2 Växel</li> -->
                             <!-- <li id="si-m2m" class="service-item">M2M / telematik</li> -->
                             <!-- <li id="si-rbl" class="service-item">röstbrevlåda</li> -->
@@ -493,14 +493,14 @@
             
                     <div class="checklist">
                         <ul>
-                            <li>kontrollera att abonnemanget är aktivt.</li>
-                            <li>kontrollera att det inte finns spärrar för internationella samtal.</li>
-                            <li>kontrollera att IN-Service är korrekt (HLR).</li>
-                            <li>kontrollera att VoLTE är aktivt.</li>
-                            <li>vid Tele2 Växel, kontrollera användarens regler.</li>
-                            <li>vid MEX, kontrollera ifall det fungerar vid "disconnected" MEX.</li>
-                            <li>kontrollera samtalsspårning i OSIX. Finns det några tydliga felkoder?</li>
-                            <li>ifall flera är påverkade, kan man eskalera ärendet till Traffic Management.</li>
+                            <li>Kontrollera att abonnemanget är aktivt.</li>
+                            <li>Kontrollera att det inte finns spärrar för internationella samtal.</li>
+                            <li>Kontrollera att IN-Service är korrekt (HLR).</li>
+                            <li>Kontrollera att VoLTE är aktivt.</li>
+                            <li>Vid Tele2 Växel, kontrollera användarens regler.</li>
+                            <li>Vid MEX, kontrollera ifall det fungerar vid "disconnected" MEX.</li>
+                            <li>Kontrollera samtalsspårning i OSIX. Finns det några tydliga felkoder?</li>
+                            <li>Ifall flera är påverkade, kan man eskalera ärendet till Traffic Management.</li>
                         </ul>
                     </div>
             
@@ -511,18 +511,18 @@
 
                 <div id="ts-samtal-specific" class="form window">
                     <div class="form-header">
-                        <h3>ringa specifikt nummer</h3>
+                        <h3>Ringa specifikt nummer</h3>
                     </div>
             
                     <div class="checklist">
                         <ul>
-                            <li>i majoriteten av fallen så brukar felet ligga hos B-parten.</li>
-                            <li>om B-nummer ligger under en annan operatör, kontrollera att B-nummer har korrekt NP-styrning mot korrekt operatör.<ul class="checklist-2">
+                            <li>I majoriteten av fallen så brukar felet ligga hos B-parten.</li>
+                            <li>Om B-nummer ligger under en annan operatör, kontrollera att B-nummer har korrekt NP-styrning mot korrekt operatör.<ul class="checklist-2">
                                 <li>Telia mobile: 005</li>
                                 <li>Telenor mobile: 006</li>
                             </ul></li>
-                            <li>om B-part bara har problem att ta mot samtal från denna A-part, bör B-part kontrollera att A-nummer inte är blockerat i sin telefon.</li>
-                            <li>om B-part har problem att ta emot samtal från flera/alla inringare, bör denna felanmäla till sin operatör.</li>
+                            <li>Om B-part bara har problem att ta mot samtal från denna A-part, bör B-part kontrollera att A-nummer inte är blockerat i sin telefon.</li>
+                            <li>Om B-part har problem att ta emot samtal från flera/alla inringare, bör denna felanmäla till sin operatör.</li>
                         </ul>
                     </div>
             
@@ -534,13 +534,13 @@
                 <div id="ts-surf-first" class="form window">
 
                     <div class="form-header">
-                        <p>välj underkategori</p>
+                        <p>Välj underkategori</p>
                     </div>
 
                     <div class="services surf-first">
                         <ul>
-                            <li id="si-surf">kan inte surfa</li>
-                            <li id="si-surf-speed">långsamma hastigheter</li>
+                            <li id="si-surf">Kan inte surfa</li>
+                            <li id="si-surf-speed">Långsamma hastigheter</li>
                         </ul>
                     </div>
 
@@ -552,19 +552,19 @@
                 <div id="ts-surf" class="form window">
 
                     <div class="form-header">
-                        <h3>kan inte surfa</h3>
+                        <h3>Kan inte surfa</h3>
                     </div>
 
                     <div class="checklist">
                         <ul>
-                            <li>kontrollera att abonnemanget är aktivt.</li>
-                            <li>kontrollera att abonnemanget har ett datapaket.</li>
-                            <li>kontrollera att det finns surf kvar att förbruka på datapaketet.</li>
-                            <li>kontrollera att det inte finns någon spärr för datatrafik.</li>
-                            <li>be användaren att kontrollera att mobildata är aktiverat i sin telefon.</li>
-                            <li>be användaren att återställa sina APN-inställningar i telefonen.</li>
-                            <li>kontrollera att APN-inställningarna är korrekt. Alternativt testa med annat APN.</li>
-                            <li>be användaren att nollställa nätverksinställningarna i telefonen.</li>
+                            <li>Kontrollera att abonnemanget är aktivt.</li>
+                            <li>Kontrollera att abonnemanget har ett datapaket.</li>
+                            <li>Kontrollera att det finns surf kvar att förbruka på datapaketet.</li>
+                            <li>Kontrollera att det inte finns någon spärr för datatrafik.</li>
+                            <li>Be användaren att kontrollera att mobildata är aktiverat i sin telefon.</li>
+                            <li>Be användaren att återställa sina APN-inställningar i telefonen.</li>
+                            <li>Kontrollera att APN-inställningarna är korrekt. Alternativt testa med annat APN.</li>
+                            <li>Be användaren att nollställa nätverksinställningarna i telefonen.</li>
                         </ul>
                     </div>
 
@@ -576,17 +576,17 @@
                 <div id="ts-surf-speed" class="form window">
 
                     <div class="form-header">
-                        <h3>långsamma hastigheter</h3>
+                        <h3>Långsamma hastigheter</h3>
                     </div>
 
                     <div class="checklist">
                         <ul>
-                            <li>kontrollera att abonnemanget har ett datapaket.</li>
-                            <li>kontrollera att man inte har förbrukat all data.</li>
-                            <li>kontrollera att det inte finns någon spärr för datatrafik.</li>
-                            <li>be användaren att återställa sina APN-inställningar i telefonen.</li>
-                            <li>kontrollera att APN-inställningarna är korrekt. Alternativt testa med annat APN.</li>
-                            <li>om problemet är platsrelaterat, se checklistan "täckning".</li>
+                            <li>Kontrollera att abonnemanget har ett datapaket.</li>
+                            <li>Kontrollera att man inte har förbrukat all data.</li>
+                            <li>Kontrollera att det inte finns någon spärr för datatrafik.</li>
+                            <li>Be användaren att återställa sina APN-inställningar i telefonen.</li>
+                            <li>Kontrollera att APN-inställningarna är korrekt. Alternativt testa med annat APN.</li>
+                            <li>Om problemet är platsrelaterat, se checklistan "täckning".</li>
                         </ul>
                     </div>
 
@@ -603,19 +603,19 @@
 
                     <div class="checklist">
                         <ul>
-                            <li>kontrollera att abonnemanget inte är spärrat för MMS.</li>
-                            <li>kontrollera ifall MMSet syns i MMSC.</li>
-                            <li>ifall MMSet syns i MMSC:<ul class="checklist-2">
-                                <li>kontrollera om det finns någon felkod på MMSet.</li>
-                                <li>om det finns en felkod, sök på felkoden i TCS OneNote.</li>
-                                <li>om det inte finns en felkod, bör MMSet ha levererats korrekt. Problem kan möjligen ligga hos B-parten.</li>
+                            <li>Kontrollera att abonnemanget inte är spärrat för MMS.</li>
+                            <li>Kontrollera ifall MMSet syns i MMSC.</li>
+                            <li>Ifall MMSet syns i MMSC:<ul class="checklist-2">
+                                <li>Kontrollera om det finns någon felkod på MMSet.</li>
+                                <li>Om det finns en felkod, sök på felkoden i TCS OneNote.</li>
+                                <li>Om det inte finns en felkod, bör MMSet ha levererats korrekt. Problem kan möjligen ligga hos B-parten.</li>
                             </ul></li>
-                            <li>ifall MMSet inte syns i MMSC:<ul class="checklist-2">
-                                <li>kontrollera att användaren har korrekt APN-inställningar i sin telefon.</li>
-                                <li>testa att återställa APN-inställningar i telefonen.</li>
-                                <li>testa att nollställa nätverksinställningar i telefonen.</li>
+                            <li>Ifall MMSet inte syns i MMSC:<ul class="checklist-2">
+                                <li>Kontrollera att användaren har korrekt APN-inställningar i sin telefon.</li>
+                                <li>Testa att återställa APN-inställningar i telefonen.</li>
+                                <li>Testa att nollställa nätverksinställningar i telefonen.</li>
                             </ul></li>
-                            <li>ifall inget av ovan fungerar, be användaren testa sitt SIM-kort i en annan telefon.</li>
+                            <li>Ifall inget av ovan fungerar, be användaren testa sitt SIM-kort i en annan telefon.</li>
                         </ul>
                     </div>
 
@@ -627,14 +627,14 @@
                 <div id="ts-sms" class="form window">
 
                     <div class="form-header">
-                        <p>välj underkategori</p>
+                        <p>Välj underkategori</p>
                     </div>
 
                     <div class="services sms-first">
                         <ul>
-                            <li id="si-sms-delayed">fördröjda SMS</li>
-                            <li id="si-sms-repeat">upprepade SMS</li>
-                            <li id="si-sms-send">kan inte skicka / ta emot SMS</li>
+                            <li id="si-sms-delayed">Fördröjda SMS</li>
+                            <li id="si-sms-repeat">Upprepade SMS</li>
+                            <li id="si-sms-send">Kan inte skicka / ta emot SMS</li>
                         </ul>
                     </div>
 
@@ -646,17 +646,17 @@
                 <div id="ts-sms-delayed" class="form window">
 
                     <div class="form-header">
-                        <h3>fördröjda SMS</h3>
+                        <h3>Fördröjda SMS</h3>
                     </div>
 
                     <div class="checklist">
                         <ul>
-                            <li>kontrollera SMSC. Ser vi något annorlunda?</li>
-                            <li>kontrollera att VoLTE är aktivt på abonnemanget & telefon.</li>
-                            <li>om VoLTE redan är aktivt, testa att omprovisionera VoLTE.</li>
-                            <li>testa SIM-kort i annan telefon.</li>
-                            <li>byt SIM-kort på abonnemanget.</li>
-                            <li>om inte ovan hjälper, kan det eventuellt handla om täckningsproblem.</li>
+                            <li>Kontrollera SMSC. Ser vi något annorlunda?</li>
+                            <li>Kontrollera att VoLTE är aktivt på abonnemanget & telefon.</li>
+                            <li>Om VoLTE redan är aktivt, testa att omprovisionera VoLTE.</li>
+                            <li>Testa SIM-kort i annan telefon.</li>
+                            <li>Byt SIM-kort på abonnemanget.</li>
+                            <li>Om inte ovan hjälper, kan det eventuellt handla om täckningsproblem.</li>
                         </ul>
                     </div>
 
@@ -668,17 +668,16 @@
                 <div id="ts-sms-repeat" class="form window">
 
                     <div class="form-header">
-                        <h3>upprepade SMS</h3>
+                        <h3>Upprepade SMS</h3>
                     </div>
 
                     <div class="checklist">
                         <ul>
-                            <li>kontrollera SMSC. Ser vi något annorlunda?</li>
-                            <li>kontrollera att VoLTE är aktivt på abonnemanget & telefon.</li>
-                            <li>om VoLTE redan är aktivt, testa att omprovisionera VoLTE.</li>
-                            <li>be användaren göra en nätverksåterställning på sin telefon.</li>
-                            <li>byt SIM-kort på abonnemanget.</li>
-                            <li>be användare testa SIM-kort i annan telefon.</li>
+                            <li>Kontrollera att VoLTE är aktivt på abonnemanget & telefon.</li>
+                            <li>Om VoLTE redan är aktivt, testa att omprovisionera VoLTE.</li>
+                            <li>Be användaren göra en nätverksåterställning på sin telefon.</li>
+                            <li>Byt SIM-kort på abonnemanget.</li>
+                            <li>Be användare testa SIM-kort i annan telefon.</li>
                         </ul>
                     </div>
 
@@ -690,22 +689,100 @@
                 <div id="ts-sms-send" class="form window">
 
                     <div class="form-header">
-                        <h3>kan inte skicka / ta emot SMS</h3>
+                        <h3>Kan inte skicka / ta emot SMS</h3>
                     </div>
 
                     <div class="checklist">
                         <ul>
-                            <li>kontrollera SMSC. Ser vi något annorlunda?</li>
-                            <li>kontrollera att VoLTE är aktivt på abonnemanget & telefon.</li>
-                            <li>om VoLTE redan är aktivt, testa att omprovisionera VoLTE.</li>
-                            <li>be användaren göra en nätverksåterställning på sin telefon.</li>
-                            <li>byt SIM-kort på abonnemanget.</li>
-                            <li>be användare testa SIM-kort i annan telefon.</li>
+                            <li>Kontrollera SMSC. Ser vi något annorlunda?</li>
+                            <li>Kontrollera att VoLTE är aktivt på abonnemanget & telefon.</li>
+                            <li>Om VoLTE redan är aktivt, testa att omprovisionera VoLTE.</li>
+                            <li>Be användaren göra en nätverksåterställning på sin telefon.</li>
+                            <li>Byt SIM-kort på abonnemanget.</li>
+                            <li>Be användare testa SIM-kort i annan telefon.</li>
                         </ul>
                     </div>
 
                     <div class="question-button button-next">
                         <button type="button" class="button-page" id="button-back-sms-send">tillbaka</button>
+                    </div>
+                </div>
+
+                <div id="ts-roaming" class="form window">
+
+                    <div class="form-header">
+                        <h3>Roaming</h3>
+                    </div>
+
+                    <div class="checklist">
+                        <ul>
+                            <li>Kontrollera att det inte finns någon spärr på abonnemanget.</li>
+                            <li>Kontrollera att data-roaming är aktiverat i telefonen.</li>
+                            <li>Be användaren att testa låsa mot olika lokala operatörer. Vissa av dessa fungerar inte, då vi inte har avtal med samtliga operatörer.
+                            <ul class="checklist-2">
+                                <li><b>iPhone: </b>Inställningar > Mobilnät > Val av nätverk > Stäng av Automatisk > Testa de olika operatörerna.</li>
+                                <li><b>Samsung: </b>Inställningar > Anslutningar > Mobilnätverk > Nätverksoperatörer > Inaktivera "Välj automatiskt" > Testa de olika operatörerna.</li>
+                            </ul>
+                            </li>
+                            <li>Be användaren att testa låsa telefonen i olika nätlägen.
+                            <ul class="checklist-2">
+                                <li><b>iPhone: </b>Inställningar > Mobilnät > Alternativ för mobildata > Röst och data > Testa de olika alternativen.</li>
+                                <li><b>Samsung: </b>Inställningar > Anslutningar > Mobilnätverk > Nätläge > Testa de olika alternativen.</li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-roaming">tillbaka</button>
+                    </div>
+                </div>
+
+                <div id="ts-t2open" class="form window">
+
+                    <div class="form-header">
+                        <p>Välj underkategori</p>
+                    </div>
+
+                    <div class="services t2o-first">
+                        <ul>
+                            <li id="si-t2o-settings"><a href="https://tele2.sharepoint.com/sites/Business-Sweden-Product_Telefoni/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FBusiness%2DSweden%2DProduct%5FTelefoni%2FShared%20Documents%2FTele2Open%20anv%C3%A4ndarguide%203%2E0%2Epdf&parent=%2Fsites%2FBusiness%2DSweden%2DProduct%5FTelefoni%2FShared%20Documents" target="_blank">Ställa in Open</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-t2open">tillbaka</button>
+                    </div>
+                </div>
+
+                <div id="ts-coverage" class="form window">
+
+                    <div class="form-header">
+                        <h3>Täckning</h3>
+                    </div>
+
+                    <div class="checklist">
+                        <ul>
+                            <li>Kontrollera att det inte finns några driftstörningar i täckningskartan (MIM / Arthur).</li>
+                            <li>Det är även bra att kontrollera att flera enheter som använder Tele2s nät upplever samma problem. Om det enbart är en enhet som upplever problem, så kan felet ligga i hårdvara eller SIM-kort.</li>
+                            <li>Kontrollera användarens adress.
+                                <ul class="checklist-2">
+                                    <li>Hur långt är det till närmsta mast? Tryck "Visa best-server-lista" för att se avstånd i meter.</li>
+                                    <li>Här kan man även se en ungefärlig signalstyrka som man kan förvänta sig på adressen. Ha då i åtanke att Arthur inte tar hänsyn till eventuell terräng och byggnader som befinner sig emellan masten och positionen. Inte heller om användaren skulle befinna sig inomhus.<br><br>Detta räknas i dB och man vill ligga så nära 0 som möjligt.<br>-50dB till -79dB | Mycket god signalstyrka<br>-80dB till -89dB | God signalstyrka<br>-90dB till -99dB | Okej signalstyrka<br>-100 och lägre | Dålig signalstyrka</li>
+                                    <li>Vad är det för master som ligger närmst till användarens position? Vid problem med surf vill man gärna ha bra 4G eller 5G täckning, exempelvis.</li>
+                                </ul>
+                            </li>
+                            <li>Spåra på abonnemanget i OSIX och se vilken site man kopplas upp mot.
+                                <ul class="checklist-2">
+                                    <li>Kontrollera om siten är överbelastad i NAC.<br><b>TI Load DL/UL:</b> över 100% tyder på många aktiva användare och sannoligt hög belastning.<br><b>PRB Load DL/UL:</b> Normal belastning ligger oftast runt 30% per dag.</li>
+                                </ul>
+                            </li>
+                            <li>Om du önskar fortsatt hjälp från intern support, så kan du höra med NOC och/eller Mobile Radio Operations (MRO)</li>
+                        </ul>
+                    </div>
+
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-coverage">tillbaka</button>
                     </div>
                 </div>
             </div>

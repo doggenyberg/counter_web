@@ -668,6 +668,17 @@ const modalTSPageSMSSend = document.getElementById('ts-sms-send');
 const modalTSSMSSendBtn = document.getElementById('si-sms-send');
 const modalTSSMSSendBtnBack = document.getElementById('button-back-sms-send');
 
+const modalTSPageRoaming = document.getElementById('ts-roaming');
+const modalTSRoamingBtn = document.getElementById('si-roaming');
+const modalTSRoamingBtnBack = document.getElementById('button-back-roaming');
+
+const modalTSPageT2Open = document.getElementById('ts-t2open');
+const modalTST2OpenBtn = document.getElementById('si-t2open');
+const modalTST2OpenBtnBack = document.getElementById('button-back-t2open');
+
+const modalTSPageCoverage = document.getElementById('ts-coverage');
+const modalTSCoverageBtn = document.getElementById('si-coverage');
+const modalTSCoverageBtnBack = document.getElementById('button-back-coverage');
 
 
 
@@ -700,10 +711,14 @@ modalTSSMSRepeatBtn.addEventListener('click', () => {nextPage(modalTSPageSMS, mo
 modalTSSMSRepeatBtnBack.addEventListener('click', () => {previousPage(modalTSPageSMSRepeat, modalTSPageSMS)});
 modalTSSMSSendBtn.addEventListener('click', () => {nextPage(modalTSPageSMS, modalTSPageSMSSend)});
 modalTSSMSSendBtnBack.addEventListener('click', () => {previousPage(modalTSPageSMSSend, modalTSPageSMS)});
-
-
+modalTSRoamingBtn.addEventListener('click', () => {nextPage(modalTSPageFirst, modalTSPageRoaming)});
+modalTSRoamingBtnBack.addEventListener('click', () => {previousPage(modalTSPageRoaming, modalTSPageFirst)});
+modalTST2OpenBtn.addEventListener('click', () => {nextPage(modalTSPageFirst, modalTSPageT2Open)});
+modalTST2OpenBtnBack.addEventListener('click', () => {previousPage(modalTSPageT2Open, modalTSPageFirst)});
+modalTSCoverageBtn.addEventListener('click', () => {nextPage(modalTSPageFirst, modalTSPageCoverage)});
+modalTSCoverageBtnBack.addEventListener('click', () => {previousPage(modalTSPageCoverage, modalTSPageFirst)});
 
 // reset values on start
 resetValues();
 closeModalWindow(modalEskaleringWindow);
-// closeModalWindow(modalTSWindow);
+closeModalWindow(modalTSWindow);

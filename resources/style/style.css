@@ -32,6 +32,7 @@ button {
 body {
     background-color: var(--bg-color);
     font-family: 'Rubik', sans-serif;
+    letter-spacing: 0.5px;
     color: #ffffff;
 }
 
@@ -272,7 +273,7 @@ body {
     border-radius: 8px;
     color: #ffffff;
     background-color: var(--accent2-color);
-    transition: 0.3s;
+    transition: 5ms ease-in-out;
     overflow: hidden;
     cursor: pointer;
 }
@@ -662,21 +663,22 @@ body {
 
 /* --- Modal Troubleshooting --- */
 
-#troubleshooting-window {
-    visibility: visible;
-}
-
 #ts-first {
     left: 20px;
+    gap: 10px;
 }
 
 #troubleshooting-window .form-header {
     padding: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 #troubleshooting-window .form-header p {
+    padding: 10px 15px;
     font-size: 1em;
+    background-color: var(--bg-color);
+    border-radius: 10px;
 }
 
 #troubleshooting-window .form-header span {
@@ -724,13 +726,29 @@ body {
 }
 
 #troubleshooting-window h3 {
-    color: var(--accent-color);
+    font-size: 1.3em;
+}
+
+#troubleshooting-window a {
+    text-decoration: none;
+    color: white;
+}
+
+#troubleshooting-window .checklist {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 240px;
 }
 
 #troubleshooting-window .checklist li {
+    color: rgb(233, 233, 233);
+    width: 98%;
+    padding: 10px;
+    border-radius: 3px;
     margin-bottom: 8px;
     list-style-type: none;
     font-size: 0.9em;
+    background-color: #292929;
 }
 
 #troubleshooting-window .checklist-2 {
@@ -738,6 +756,10 @@ body {
 }
 
 #troubleshooting-window .checklist-2 li {
-    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0;
+    border-radius: 0;
+    background-color: inherit;
     list-style-type: circle;
 }
