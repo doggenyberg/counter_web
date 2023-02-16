@@ -507,7 +507,7 @@ function submitForm() {
     if (service) {
         console.log(service);
         modalFinalMall.value = '// FEL' + '\n';
-        modalFinalMall.value += service + '\n' + '\n' + '\n';
+        modalFinalMall.value += service + '\n' + '\n';
     };
     if (problemStarted || totalAffected || locationBased || address) {
         modalFinalMall.value += '// INFO' + '\n';
@@ -525,17 +525,17 @@ function submitForm() {
         modalFinalMall.value += 'Adress: '+ address + '\n';
     };
     if (detailedDescription) {
-        modalFinalMall.value += '\n' + '\n' + '// DETALJERAD BESKRIVNING' + '\n' + detailedDescription + '\n';
+        modalFinalMall.value += '\n' + '// DETALJERAD BESKRIVNING' + '\n' + detailedDescription + '\n';
     };
     if (subArray.length > 0) {
-        modalFinalMall.value += '\n' + '\n' + '// PÅVERKADE ABONNEMANG' + '\n';
+        modalFinalMall.value += '\n' + '// PÅVERKADE ABONNEMANG' + '\n';
         for (let i = 0; i < subArray.length; i++) {
             modalFinalMall.value += subArray[i].number + ' | IMSI ' + subArray[i].imsi + '\n';
         }
     }
     if (modalSamtalsexempelDate.value && modalSamtalsexempelTime.value) {
         importSamtalsexempel(modalSamtalsexempelSelectA, modalSamtalsexempelANumberManual, modalSamtalsexempelAImsiManual, modalSamtalsexempelSelectB, modalSamtalsexempelBNumberManual, modalSamtalsexempelBImsiManual, modalSamtalsexempelCheckboxA, modalSamtalsexempelCheckboxB, modalSamtalsexempelDate, modalSamtalsexempelTime);
-        modalFinalMall.value += '\n' + '\n' + '// SAMTALSEXEMPEL' + '\n';
+        modalFinalMall.value += '\n' + '// SAMTALSEXEMPEL' + '\n';
         modalFinalMall.value += 'A-part: ' + modalSamtalsexempel[0].aNumber +' | IMSI '+ modalSamtalsexempel[0].aImsi + '\n';
         modalFinalMall.value += 'B-part: '+ modalSamtalsexempel[0].bNumber +' | IMSI '+ modalSamtalsexempel[0].bImsi + '\n';
         modalFinalMall.value += 'Datum: ' + modalSamtalsexempel[0].date + '\n';
