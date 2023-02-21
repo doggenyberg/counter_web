@@ -174,6 +174,14 @@ function previousPage(currentPage, previousPage) {
     modalPageSamtalsexempel2.style.top = '550px';
 }
 
+function qlPage (currentPage, nextPage, previousPage) {
+    currentPage.style.left = '600px';
+    nextPage.style.left = '20px';
+    if (previousPage) {
+        previousPage.style.left = '600px';
+    }
+}
+
 function addExample(currentPage, nextPage) {
     nextPage.style.top = '60px';
     currentPage.style.top = '-500px';
@@ -680,7 +688,11 @@ const modalTSPageCoverage = document.getElementById('ts-coverage');
 const modalTSCoverageBtn = document.getElementById('si-coverage');
 const modalTSCoverageBtnBack = document.getElementById('button-back-coverage');
 
-
+// Quick-links
+const modalQlCoverage = document.getElementById('ql-coverage');
+const modalQlCoverage2 = document.getElementById('ql-coverage-2');
+const modalQlCoverage3 = document.getElementById('ql-coverage-3');
+const modalQLCoverage4 = document.getElementById('ql-coverage-4');
 
 // Eventlisteners
 modalTSOpenBtn.addEventListener('click', () => {openModalWindow(modalTSWindow)});
@@ -717,6 +729,11 @@ modalTST2OpenBtn.addEventListener('click', () => {nextPage(modalTSPageFirst, mod
 modalTST2OpenBtnBack.addEventListener('click', () => {previousPage(modalTSPageT2Open, modalTSPageFirst)});
 modalTSCoverageBtn.addEventListener('click', () => {nextPage(modalTSPageFirst, modalTSPageCoverage)});
 modalTSCoverageBtnBack.addEventListener('click', () => {previousPage(modalTSPageCoverage, modalTSPageFirst)});
+
+modalQlCoverage.addEventListener('click', () => {qlPage(modalTSPageIncoming, modalTSPageCoverage, modalTSPageSamtalFirst)});
+modalQlCoverage2.addEventListener('click', () => {qlPage(modalTSPageOutbound, modalTSPageCoverage, modalTSPageSamtalFirst)});
+modalQlCoverage3.addEventListener('click', () => {qlPage(modalTSPageSpeed, modalTSPageCoverage, modalTSPageSurfFirst)});
+modalQLCoverage4.addEventListener('click', () => {qlPage(modalTSPageSMSDelayed, modalTSPageCoverage, modalTSPageSMS)});
 
 // reset values on start
 resetValues();

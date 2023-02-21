@@ -720,18 +720,32 @@ body {
     background-color: var(--accent2-color);
 }
 
+#troubleshooting-window a {
+    text-decoration: none;
+    color: white;
+}
+
 #troubleshooting-window .window {
     left: 600px;
     gap: 10px;
 }
 
-#troubleshooting-window h3 {
-    font-size: 1.3em;
+#troubleshooting-window .quick-link {
+    color: var(--accent-color);
+    cursor: pointer;
 }
 
-#troubleshooting-window a {
-    text-decoration: none;
-    color: white;
+#troubleshooting-window .quick-link {
+    text-decoration-line: underline;
+    text-decoration: underline;
+}
+
+#troubleshooting-window .quick-link:hover {
+    color: #e64752;
+}
+
+#troubleshooting-window h3 {
+    font-size: 1.3em;
 }
 
 #troubleshooting-window .checklist {
