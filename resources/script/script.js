@@ -688,6 +688,14 @@ const modalTSPageCoverage = document.getElementById('ts-coverage');
 const modalTSCoverageBtn = document.getElementById('si-coverage');
 const modalTSCoverageBtnBack = document.getElementById('button-back-coverage');
 
+const modalTSPageWatch = document.getElementById('ts-watch-first');
+const modalTSWatchBtn = document.getElementById('si-watch');
+const modalTSWatchBtnBack = document.getElementById('button-back-watch');
+
+const modalTSPageInstall = document.getElementElement('ts-watch-install');
+const modalTSWatchInstallBtn = document.getElement('si-watch-install');
+const modalTSWatchInstallBtnBack = document.getElement('button-back-watch-install');
+
 // Quick-links
 const modalQlCoverage = document.getElementById('ql-coverage');
 const modalQlCoverage2 = document.getElementById('ql-coverage-2');
@@ -729,6 +737,10 @@ modalTST2OpenBtn.addEventListener('click', () => {nextPage(modalTSPageFirst, mod
 modalTST2OpenBtnBack.addEventListener('click', () => {previousPage(modalTSPageT2Open, modalTSPageFirst)});
 modalTSCoverageBtn.addEventListener('click', () => {nextPage(modalTSPageFirst, modalTSPageCoverage)});
 modalTSCoverageBtnBack.addEventListener('click', () => {previousPage(modalTSPageCoverage, modalTSPageFirst)});
+modalTSWatchBtn.addEventListener('click', () => {nextPage(modalTSPageFirst, modalTSPageWatch)});
+modalTSWatchBtnBack.addEventListener('click', () => {previousPage(modalTSPageWatch, modalTSPageFirst)});
+modalTSWatchInstallBtn.addEventListener('click', () => {nextPage(modalTSPageWatch, modalTSPageInstall)});
+modalTSWatchInstallBtnBack.addEventListener('click', () => {previousPage(modalTSPageInstall, modalTSPageWatch)});
 
 modalQlCoverage.addEventListener('click', () => {qlPage(modalTSPageIncoming, modalTSPageCoverage, modalTSPageSamtalFirst)});
 modalQlCoverage2.addEventListener('click', () => {qlPage(modalTSPageOutbound, modalTSPageCoverage, modalTSPageSamtalFirst)});

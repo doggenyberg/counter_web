@@ -410,7 +410,7 @@
                             <li id="si-t2open" class="service-item">Tele2 Open</li>
                             <li id="si-sms" class="service-item">SMS</li>
                             <li id="si-coverage" class="service-item">Täckning</li>
-                            <!-- <li id="si-watch" class="service-item">Klockabonnemang</li> -->
+                            <li id="si-watch" class="service-item">Klockabonnemang</li>
                             <!-- <li id="si-t2v" class="service-item">Tele2 Växel</li> -->
                             <!-- <li id="si-m2m" class="service-item">M2M / telematik</li> -->
                             <!-- <li id="si-rbl" class="service-item">röstbrevlåda</li> -->
@@ -768,7 +768,7 @@
                             <li>Kontrollera användarens adress.
                                 <ul class="checklist-2">
                                     <li>Hur långt är det till närmsta mast? Tryck "Visa best-server-lista" för att se avstånd i meter.</li>
-                                    <li>Här kan man även se en ungefärlig signalstyrka som man kan förvänta sig på adressen. Ha då i åtanke att Arthur inte tar hänsyn till eventuell terräng och byggnader som befinner sig emellan masten och positionen. Inte heller om användaren skulle befinna sig inomhus.<br><br>Detta räknas i dB och man vill ligga så nära 0 som möjligt.<br>-50dB till -79dB | Mycket god signalstyrka<br>-80dB till -89dB | God signalstyrka<br>-90dB till -99dB | Okej signalstyrka<br>-100 och lägre | Dålig signalstyrka</li>
+                                    <li>Här kan man även se en ungefärlig signalstyrka som man kan förvänta sig på adressen. Ha då i åtanke att Arthur inte tar hänsyn till eventuell terräng och byggnader som befinner sig emellan masten och positionen. Inte heller om användaren skulle befinna sig inomhus.<br><br>Detta räknas i dBm och man vill ligga så nära 0dBm som möjligt.<br>-50dBm till -79dBm | Mycket god signalstyrka<br>-80dBm till -89dBm | God signalstyrka<br>-90dBm till -99dBm | Okej signalstyrka<br>-100dBm och lägre | Dålig signalstyrka</li>
                                     <li>Vad är det för master som ligger närmst till användarens position? Vid problem med surf vill man gärna ha bra 4G eller 5G täckning, exempelvis.</li>
                                 </ul>
                             </li>
@@ -783,6 +783,45 @@
 
                     <div class="question-button button-next">
                         <button type="button" class="button-page" id="button-back-coverage">tillbaka</button>
+                    </div>
+                </div>
+
+                <div id="ts-watch-first" class="form window">
+
+                    <div class="form-header">
+                        <p>Välj underkategori</p>
+                    </div>
+
+                    <div class="services watch-first">
+                        <ul>
+                            <li id="si-watch-install">Beställa klockabonnemang</li>
+                        </ul>
+                    </div>
+
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-watch">tillbaka</button>
+                    </div>
+                </div>
+
+                <div id="ts-watch-install" class="form window">
+
+                    <div class="form-header">
+                        <h3>Beställa klockabonnemang</h3>
+                    </div>
+
+                    <div class="checklist">
+                        <ul>
+                            <li>Denna checklista förutsätter att klockan har LTE-funktion & att telefon är uppdaterad till senaste mjukvara.</li>
+                            <li>Kontrollera att "Tillåt beställning av klockabonnemang" är aktiverat i Melody.</li>
+                            <li>Kontrollera att abonnemanget & telefonen har VoLTE aktiverat.</li>
+                            <li>Användaren behöver vara uppkopplad mot Wi-Fi vid aktiveringen av klockabonnemanget.</li>
+                            <li>Kontrollera att SIM-kortet inte är för gammalt. Vid gammalt SIM-kort kommer användaren inte kunna beställa klockabonnemang. Ifall första siffrorna på ICCIDt är "8945" klassas det som gammalt.</li>
+                            <li>Får användaren ett felmeddelande som säger "Klockabonnemang kan inte beställas till detta abonnemang" även fast "Tillåt beställning av klockabonnemang" är aktiverat i Melody, kan det bero på att användaren har dubbla SIM-kort i telefonen. Därav försöker telefonen installera klockabonnemang på det andra SIM-kortet.</li>
+                        </ul>
+                    </div>
+
+                    <div class="question-button button-next">
+                        <button type="button" class="button-page" id="button-back-watch-install">tillbaka</button>
                     </div>
                 </div>
             </div>
