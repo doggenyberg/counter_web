@@ -692,9 +692,9 @@ const modalTSPageWatch = document.getElementById('ts-watch-first');
 const modalTSWatchBtn = document.getElementById('si-watch');
 const modalTSWatchBtnBack = document.getElementById('button-back-watch');
 
-const modalTSPageInstall = document.getElementElement('ts-watch-install');
-const modalTSWatchInstallBtn = document.getElement('si-watch-install');
-const modalTSWatchInstallBtnBack = document.getElement('button-back-watch-install');
+const modalTSPageInstall = document.getElementById('ts-watch-install');
+const modalTSWatchInstallBtn = document.getElementById('si-watch-install');
+const modalTSWatchInstallBtnBack = document.getElementById('button-back-watch-install');
 
 // Quick-links
 const modalQlCoverage = document.getElementById('ql-coverage');
